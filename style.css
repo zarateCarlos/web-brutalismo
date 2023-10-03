@@ -1,0 +1,396 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&family=Rock+Salt&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+
+
+}
+
+body {
+    background-color: #f2f4f0;
+}
+
+.title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 12vh;
+    background-color: #ad7bff;
+}
+
+.title img {
+    width: 50px;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 12vh;
+    background-color: #ffffff;
+    border-top: 2px solid #171719;
+    border-bottom: 2px solid #171719;
+    border-left: none;
+    border-right: none;
+}
+
+.regalo {
+    padding: 3.5vh 40px;
+    background-color: #171719;
+    color: #f2f4f0;
+    text-decoration: none;
+    text-align: center;
+    font-weight: 700;
+    font-size: 20px;
+}
+
+.navbar {
+    display: flex;
+    gap: 50px;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: #171719;
+    font-weight: 700;
+    font-size: 20px;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+}
+
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    height: 76vh;
+    position: relative;
+    background-color: #edde38;
+}
+
+.heroTexto {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    justify-content: center;
+    width: 400px;
+    height: 100%;
+    gap: 50px;
+    transition: 300ms ease all;
+    color: #171719;
+}
+
+.heroTexto h2 {
+
+    font-size: 35px;
+}
+
+.heroImg {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 400px;
+    height: 400px;
+    position: relative;
+}
+
+.heroTexto a {
+    padding: 10px 20px;
+    box-shadow: 6px 6px black;
+    background-color: red;
+    color: #f2f4f0;
+    font-weight: 700;
+    font-size: 30px;
+    text-decoration: none;
+    border-radius: 15px;
+    transition: 300ms ease all;
+
+}
+
+.heroTexto a:hover {
+    background-color: #171719;
+    box-shadow: 5px 5px red;
+}
+
+.sticker {
+    position: absolute;
+    width: 70px;
+}
+
+.love {
+    top: 200px;
+    left: 10px;
+}
+
+.mate {
+    bottom: 50px;
+}
+
+.puzle {
+    right: 80px;
+
+    top: -20px;
+}
+
+.heroImg img {
+    width: 150px;
+    position: absolute;
+}
+
+.heroImg svg {
+    position: absolute;
+    width: 500px;
+
+}
+
+.idea {
+    top: 0px;
+    left: 400px;
+}
+
+.explosion {
+    bottom: 0px;
+    right: 300px;
+
+}
+
+.dinamita {
+    right: 500px;
+}
+
+/*slider*/
+
+.slideres {
+    display: flex;
+    padding: 5px 0;
+    overflow: hidden;
+    color: #171719;
+    border-top: 2px solid #171719;
+    border-bottom: 2px solid #171719;
+    border-left: none;
+    border-right: none;
+}
+
+.sliderTrack {
+
+    display: flex;
+    align-items: center;
+    animation: scroll 10s linear infinite;
+    -webkit-animation: scroll 10s linear infinite;
+
+}
+
+.slider {
+    text-align: center;
+
+}
+
+
+@keyframes scroll {
+    from {
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+    }
+
+    to {
+        -webkit-transform: translateX(-100%);
+        transform: translateX(-100%);
+    }
+}
+
+/*porque*/
+
+.titulo {
+    margin: 20px auto;
+    text-align: center;
+    width: 100%;
+    width: 600px;
+    padding: 5px;
+    border-radius: 50px;
+    border: 2px solid black;
+
+}
+
+.marco {
+    margin: 20px auto;
+    text-align: center;
+    width: 100%;
+    width: 500px;
+    padding: 10px;
+    border-radius: 50px;
+    background: #ad7bff;
+    box-shadow: 6px 6px black;
+    text-transform: uppercase;
+
+}
+
+.marco h2 {
+    font-size: 30px;
+}
+
+
+.conocenos {
+    display: flex;
+    justify-content: center;
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 350px;
+    margin: 20px;
+    padding: 10px;
+    border: 2px solid black;
+    box-shadow: 6px 6px black;
+}
+
+.info img {
+    width: 100px;
+    height: 100px;
+}
+
+/*redes*/
+
+.redes {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 100px;
+    margin: 50px;
+    text-align: center;
+    background: red;
+    box-shadow: 6px 6px black;
+    text-transform: uppercase;
+}
+
+.insta {
+    z-index: 100;
+    position: relative;
+    margin-top: 400px;
+    filter: drop-shadow(30px 0px 8px rgba(0, 0, 0, 0.5));
+}
+
+.tik {
+    z-index: 100;
+    position: relative;
+    margin-top: 400px;
+    filter: drop-shadow(-30px 0px 8px rgba(0, 0, 0, 0.5));
+}
+
+.servicios {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    width: 100%;
+    border-top: 2px solid #171719;
+    border-bottom: 2px solid #171719;
+    border-left: none;
+    border-right: none;
+    margin: 20px auto 0px;
+    background-color: #edde38;
+
+}
+
+.servicio {
+    width: 300px;
+    height: 320px;
+    border: 1.5px solid black;
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.servicio img {
+    width: 50px;
+
+}
+
+.item {
+    width: 100%;
+    height: 230px;
+    background-color: #ad7bff;
+    margin-bottom: 40px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.servicio:nth-of-type(2) .item {
+    background-color: #7fbc8c;
+}
+
+.servicio:nth-of-type(3) .item {
+    background-color: #ff69b4;
+}
+
+.servicio:nth-of-type(4) .item {
+    background-color: #69d2e7;
+}
+
+.servicio:nth-of-type(5) .item {
+    background-color: #9723c9;
+}
+
+.servicio:nth-of-type(6) .item {
+    background-color: #e3a018;
+}
+
+.item button {
+    width: 100px;
+    padding: 10px 10px;
+    box-shadow: 6px 6px black;
+    background-color: red;
+    color: #f2f4f0;
+    transition: 300ms all ease;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.item h4 {
+    margin-top: 20px;
+    font-size: 34px;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.item button:hover {
+    transform: translateX(6px) translateY(6px);
+    box-shadow: 0px 0px black;
+
+}
+
+.gracias {
+    width: 90%;
+    height: 20vh;
+    background-color: red;
+    box-shadow: 6px 6px black;
+    margin: 100px auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    text-transform: uppercase;
+}
+.color{
+    color: #edde38;
+}
+
+.gracias img {
+    width: 250px;
+    margin-top: 40px;
+    filter: drop-shadow(-12px 0px 8px rgba(0, 0, 0, 0.5));
+}
