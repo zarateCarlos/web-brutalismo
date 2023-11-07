@@ -8,8 +8,13 @@
 
 }
 
+::-webkit-scrollbar {
+    display: none;
+}
+
 body {
     background-color: #f2f4f0;
+
 }
 
 .title {
@@ -46,6 +51,10 @@ nav {
     border-left: 2px solid #171719;
     border-right: 2px solid #171719;
     text-decoration: none;
+
+}
+nav a{
+    color: #f2f4f0;
 }
 
 .navbar {
@@ -241,6 +250,7 @@ main {
 .conocenos {
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
 }
 
 .info {
@@ -425,7 +435,7 @@ main {
 }
 
 .amigos {
-    width: 90%;
+    width: 100%;
     margin: 30px auto;
     display: flex;
     align-items: center;
@@ -439,7 +449,7 @@ main {
 .amigo {
     display: flex;
     flex-direction: column;
-    width: 400px;
+    width: 380px;
     align-items: center;
     justify-content: center;
     text-align: center;
@@ -507,12 +517,131 @@ main {
     display: inline-flex;
 }
 
-footer{
+footer {
     width: 100%;
     height: 500px;
     margin: 0 auto 50px;
     background-color: #edde38;
     box-shadow: 0px 8px black;
     border-top: 2px solid black;
+
+}
+
+@media (min-width: 768px) and (max-width: 1025px) {
+    .gracias h2 {
+        padding: 20px 50px;
+    }
+
+    .conocenos {
+
+        flex-wrap: wrap;
+    }
+
+}
+
+@media (min-width:320px) and (max-width: 767px) {
+    nav {
+        height: 8vh;
+
+    }
+
+    .navbar {
+        display: none;
+    
+    }
+    .regalo{
+        color: #f2f4f0;
+        width: 220px;
+        display: flex;
+        align-items: center;
+        font-size: 22px;
+        font-weight: bold;
+    }
+.hero{
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+.heroTexto {
+    align-items: center;
+    margin-top: 40px;
+}
+    .heroTexto h2 {
+        font-size: 22px;
+        text-align: center;
+        margin-top: 20px;
+        
+    }
+    .heroTexto a{
+    font-size: 18px;
+    margin-top: -25px;
+    }
+    .heroImg svg {
+        width: 300px;
+    }
+    .heroImg {
+        margin-bottom: -20px;
+    }
+
+
+    .slideres{
+        height: 70px;
+        
+    }
+    .slider img{
+        width: 50px;
+    }
+    .titulo{
+        width: 310px;
+        padding: 5px 8px;
+    }
+    .marco{
+        width: 280px;
+        padding: 5px 8px;
+        margin-top: 5px;
+        margin-bottom: 9px;
+    }
+    .marco h2{
+        font-size: 20px;
+    }
+    .redes{
+        width: 90%;
+        margin: 50px auto 50px;
+        padding: 0;
+    }
+    .redes h2{
+        font-size: 14px;
+        width: 290px;
+    }
+
+    .insta {
+        z-index: 100;
+        position: relative;
+        margin-top: 700px;
+
+    }
+    
+    .tik {
+        z-index: 100;
+        position: relative;
+        margin-top: 700px;
+    
+    }
+    .servicios {
+        margin-top: 30px;
+    }
+    .gracias{
+        height: 100px;
+        width: 90%;
+        padding-left: 10px;
+    }
+    .gracias h2{
+        font-size: 16px;
+
+    }
+    .gracias img{
+        width: 180px;
+    }
 
 }
