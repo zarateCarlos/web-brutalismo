@@ -48,13 +48,21 @@ nav {
     width: 130px;
     height: 100%;
     justify-content: center;
+    align-items: center;
     border-left: 2px solid #171719;
     border-right: 2px solid #171719;
     text-decoration: none;
 
 }
-nav a{
+
+nav a {
     color: #f2f4f0;
+    font-weight: bold;
+}
+
+nav a span {
+    color: red;
+    font-size: 30px
 }
 
 .navbar {
@@ -91,7 +99,7 @@ main {
     align-items: flex-start;
     flex-direction: column;
     justify-content: center;
-    width: 400px;
+    width: 50%;
     height: 100%;
     gap: 50px;
     transition: 300ms ease all;
@@ -100,7 +108,7 @@ main {
 
 .heroTexto h2 {
 
-    font-size: 35px;
+    font-size: 30px;
 }
 
 .heroImg {
@@ -443,79 +451,41 @@ main {
     flex-wrap: wrap;
     height: 100%;
     padding: 5px;
-    gap: 20px;
+    gap: 50px;
 }
 
 .amigo {
     display: flex;
-    flex-direction: column;
-    width: 380px;
+    width: 480px;
     align-items: center;
     justify-content: center;
-    text-align: center;
+    gap: 20px;
     border: 2px solid #171719;
     padding: 20px;
     box-shadow: 8px 8px black;
     background-color: #69d2e7;
 
-
 }
-
-.amigo h3,
-.amigo p {
-    position: relative;
-    bottom: 40px;
-}
-
 
 .foto {
     display: flex;
     align-items: center;
     justify-content: center;
-    position: relative;
-    top: 80px;
+    border: 2px solid black;
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    background-color: rgb(220, 207, 20);
+}
+
+.foto img {
     width: 100px;
     height: 100px;
     border-radius: 50%;
     border: 2px solid black;
-    background-color: #9723c9;
-}
-
-.foto img {
-    border-radius: 50%;
-    width: 80px;
-    height: 80px;
-    border: 2px solid black;
-}
-
-.sita img {
-    position: relative;
-    width: 220px;
-    filter: drop-shadow(8px 8px 0px black);
-}
-
-.sita {
-    height: 100%;
-}
-
-.sita p {
-    position: relative;
-    bottom: 130px;
-    left: 25px;
-    width: 180px;
-    font-size: 13px;
-    font-weight: bold;
 
 }
 
-.testimonio {
-    display: flex;
-    gap: 20px;
-}
-
-.pepe {
-    display: inline-flex;
-}
 
 footer {
     width: 100%;
@@ -541,76 +511,96 @@ footer {
 
 @media (min-width:320px) and (max-width: 767px) {
     nav {
-        height: 8vh;
+        height: 5vh;
+        width: 100%;
 
     }
 
     .navbar {
         display: none;
-    
+
     }
-    .regalo{
+    .title{
+        font-size: 14px;
+        height: 10vh;
+        gap: 7px;
+    }
+
+    .regalo {
         color: #f2f4f0;
-        width: 220px;
+        width: 180px;
         display: flex;
         align-items: center;
-        font-size: 22px;
+        font-size: 16px;
         font-weight: bold;
     }
-.hero{
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
-    height: 100%;
-}
-.heroTexto {
-    align-items: center;
-    margin-top: 40px;
-}
+
+    .hero {
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+    }
+
+    .heroTexto {
+        align-items: center;
+        margin-top: 40px;
+        width: 100%;
+    }
+
     .heroTexto h2 {
         font-size: 22px;
         text-align: center;
         margin-top: 20px;
-        
+
     }
-    .heroTexto a{
-    font-size: 18px;
-    margin-top: -25px;
+
+    .heroTexto a {
+        font-size: 18px;
+        margin-top: -25px;
     }
+
     .heroImg svg {
         width: 300px;
     }
+
     .heroImg {
         margin-bottom: -20px;
     }
 
 
-    .slideres{
+    .slideres {
         height: 70px;
-        
+
     }
-    .slider img{
+
+    .slider img {
         width: 50px;
     }
-    .titulo{
+
+    .titulo {
         width: 310px;
         padding: 5px 8px;
     }
-    .marco{
+
+    .marco {
         width: 280px;
         padding: 5px 8px;
         margin-top: 5px;
         margin-bottom: 9px;
     }
-    .marco h2{
+
+    .marco h2 {
         font-size: 20px;
     }
-    .redes{
+
+    .redes {
         width: 90%;
         margin: 50px auto 50px;
         padding: 0;
     }
-    .redes h2{
+
+    .redes h2 {
         font-size: 14px;
         width: 290px;
     }
@@ -621,27 +611,38 @@ footer {
         margin-top: 700px;
 
     }
-    
+
     .tik {
         z-index: 100;
         position: relative;
         margin-top: 700px;
-    
+
     }
+
     .servicios {
         margin-top: 30px;
+        width: 100%;
     }
-    .gracias{
+
+    .gracias {
         height: 100px;
         width: 90%;
         padding-left: 10px;
     }
-    .gracias h2{
+
+    .gracias h2 {
         font-size: 16px;
 
     }
-    .gracias img{
+
+    .gracias img {
         width: 180px;
     }
 
+    .amigo {
+        width: 95%;
+    }
+    footer{
+        width: 100%;
+    }
 }
