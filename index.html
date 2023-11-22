@@ -9,7 +9,14 @@
 </head>
 
 <body>
-    <header class="title">
+
+    <nav class="flotante">
+        <a href="#title">Inicio</a>
+        <a href="#servicios">Servicios</a>
+        <a href="#titulo">Nosotros</a>
+        <a href="#contacto">Contacto</a>
+    </nav>
+    <header class="title" id="title">
         <img src="/icons8-estrella-100.png" alt="estrella">
         <h1>MARIAN & CHARLIE</h1>
         <img src="/icons8-estrella-100.png" alt="estrella">
@@ -21,16 +28,23 @@
             <a href="#">Nosotros</a>
             <a href="#">Contacto</a>
         </div>
-        <a class="regalo" href="#"><span>¡</span> NO ENTRAR <span>!</span>
-        </a>
+        <span class="hoy">
+            <img src="/klipartz.com (1).png" alt="">
+            <img src="/klipartz.com (1).png" alt="">
+            <a class="regalo" href="#">
+                <img src="/klipartz.com (1).png" alt="">
+            </a>
+        </span>
     </nav>
     <main>
         <div class="hero">
             <div class="heroTexto">
                 <h2>
-                    La innovación se encuentra en el corazón de todo lo que hacemos. <br>
+                    La <span class="resaltar">innovación</span> se encuentra en el <span class="resaltar">corazón</span>
+                    de todo lo que <span class="resaltar">hacemos</span>. <br>
                     ¡Descubre un mundo de
-                    posibilidades que potenciarán tu proyecto!
+                    <span class="resaltar">posibilidades</span> que <span class="resaltar">potenciarán tu
+                        proyecto!</span>
                 </h2>
                 <a href="#">Mas Info</a>
 
@@ -161,7 +175,7 @@
             </div>
         </section>
 
-        <div class="titulo">
+        <div class="titulo" id="titulo">
             <div class="marco">
                 <h2>¿¿Por que nosotros??</h2>
             </div>
@@ -211,7 +225,7 @@
 
         </div>
 
-        <div class="titulo">
+        <div class="titulo" id="servicios">
             <div class="marco">
                 <h2>nos especializamos en..</h2>
             </div>
@@ -219,7 +233,18 @@
 
         <section class="servicios">
 
+            <div id="services-container" class="services-container"></div>
+
             <dialog id="myModal" class="modal">
+
+            </dialog>
+
+
+
+
+
+
+            <!-- <dialog id="myModal" class="modal">
                 <span class="close-btn" onclick="closeModal()">&times;</span>
                 <h2>Este es un modal</h2>
                 <p>¡Hola! Soy un modal simple creado con la etiqueta &lt;dialog&gt;.</p>
@@ -231,7 +256,7 @@
 
                 <div class="item">
                     <h4>DESARROLLO WEB</h4>
-                    <button class="view-modal-btn" onclick="openModal()">saber mas</button>
+                    <button class="view-modal-btn onclick="openModal()">sabermas</button>
                 </div>
             </div>
 
@@ -277,7 +302,7 @@
                     <h4>marketing <br> digital</h4>
                     <button>saber mas</button>
                 </div>
-            </div>
+            </div>-->
         </section>
         <div class="gracias">
             <h2>ya hiciste <span class="color">"click"</span> en la sorpresa que te dejamos arriba??</h2>
@@ -352,7 +377,7 @@
     </main>
 
 
-    <div class="titulo">
+    <div class="titulo" id="contacto">
         <div class="marco">
             <h2>Contactanos..</h2>
         </div>

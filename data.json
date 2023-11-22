@@ -1,0 +1,32 @@
+[
+    {
+        "id": 1,
+        "nombre": "DESARROLLO WEB",
+        "descripcion": "Creamos la estructura del sitio web conforme a las necesidades y lo adaptamoscualquier dispositivo; optimizamos su rendimiento, lo que mejora la experiencia delusuario y el posicionamiento en motores de búsqueda. Realizamos el mantenimiento del sitio: modific aciones, incorporación de nuevas características y contenido a medida que sea necesario."
+    },
+    {
+        "id": 2,
+        "nombre": "UI - UX",
+        "descripcion": "Realizamos el diseño gráfico de los elementos de la interfaz, seleccionamos la tipografía y los colores; creamos una estética única, atractiva y coherente para destacar el sitio web. Hacemos pruebas de experiencia de usuario y las analizamos con el fin de optimizar la interfaz y sus funcionalidades."
+    },
+    {
+        "id": 3,
+        "nombre": "MARKETING DIGITAL",
+        "descripcion": "Desarrollamos campañas estratégicas adaptadas a los objetivos de cada proyecto y hacemos el seguimiento adecuado. Realizamos servicios de SEO para optimizar la presencia en línea."
+    },
+    {
+        "id": 4,
+        "nombre": "SOCIAL MEDIA",
+        "descripcion": "Planificamos las acciones y definimos: objetivos, público y tono de voz para los canales de redes sociales adecuados. Realizamos el análisis de las métricas y evaluamos las estrategias."
+    },
+    {
+        "id": 5,
+        "nombre": "COMMUNITY MANAGEMENT",
+        "descripcion": "Creamos el contenido de valor según lo planificado, gestionamos la comunidad, nos enfocamos en mantener el feedback y ¡la hacemos crecer!"
+    },
+    {
+        "id": 6,
+        "nombre": "CONTENIDO AUDIOVISUAL",
+        "descripcion": "Ideamos el contenido exclusivo para cada canal y así, que cada proyecto se destaque en su ámbito. Desde un podcast hasta reels o clips que generen atracción e interacción con la comunidad"
+    }
+]
