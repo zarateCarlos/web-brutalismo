@@ -155,25 +155,6 @@ main {
     box-shadow: 5px 5px red;
 }
 
-.sticker {
-    position: absolute;
-    width: 70px;
-}
-
-.love {
-    top: 200px;
-    left: 10px;
-}
-
-.mate {
-    bottom: 50px;
-}
-
-.puzle {
-    right: 80px;
-
-    top: -20px;
-}
 
 .heroImg img {
     width: 150px;
@@ -186,20 +167,7 @@ main {
 
 }
 
-.idea {
-    top: 0px;
-    left: 400px;
-}
 
-.explosion {
-    bottom: 0px;
-    right: 300px;
-
-}
-
-.dinamita {
-    right: 500px;
-}
 
 /*slider*/
 
@@ -446,15 +414,36 @@ main {
 /* Estilo base del modal */
 .modal {
     display: none;
-    background-color: #fff;
     padding: 40px;
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
     width: 60%;
-    top: 25%;
+    top: 20%;
     margin: 0 auto;
     position: fixed;
     transform: scale(0.5);
+}
+
+.modal h2 {
+    margin-bottom: 20px;
+}
+
+.modal p {
+    width: 70%;
+    margin-bottom: 20px;
+}
+
+.gratis {
+    display: flex;
+    gap: 20px;
+    justify-content: end;
+}
+
+.gratis a {
+    text-decoration: none;
+    padding: 4px 8px;
+    background-color: rgb(67, 203, 22);
+    color: #000000;
 }
 
 
@@ -623,7 +612,7 @@ footer {
 
     .heroTexto {
         align-items: center;
-        margin-top: 40px;
+        margin-top: 0px;
         width: 90%;
     }
 
@@ -717,8 +706,13 @@ footer {
 
     .modal {
         width: 90%;
+        top: auto;
+        bottom: 5%;
     }
 
+    .modal p {
+        width: 100%;
+    }
 
 
     .gracias {
@@ -760,7 +754,7 @@ footer {
         text-transform: uppercase;
 
 
-        background: rgba(255, 255, 255, 0.25);
+        background: #ad7bff;
         box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
         backdrop-filter: blur(10px);
         -webkit-backdrop-filter: blur(4px);
@@ -773,5 +767,14 @@ footer {
         font-weight: bold;
         text-transform: uppercase;
         font-size: 14px;
+    }
+    .hero{
+        height: 50vh;
+    }
+    .heroTexto a {
+        margin-bottom: 20px;
+    }
+    .heroImg{
+        display: none;
     }
 }

@@ -55,8 +55,10 @@ function createServiceElement(servicio) {
     const button = document.createElement('button');
     button.classList.add('view-modal-btn');
     button.textContent = 'saber mas';
-    button.onclick = () => openModal(servicio.nombre, servicio.descripcion); // Pasa nombre y descripción al abrir el modal
+    button.onclick = () => openModal(servicio.nombre, servicio.descripcion.replace(/\n/g, `<br>`), servicio.colorFondo); // Pasa nombre y descripción al abrir el modal
     itemDiv.appendChild(button);
+
+
 
     div.appendChild(itemDiv);
 
@@ -64,13 +66,22 @@ function createServiceElement(servicio) {
 }
 
 
-function openModal(nombre, descripcion) {
+function openModal(nombre, descripcion, colorFondo) {
     const modal = document.getElementById('myModal');
     modal.innerHTML = `
         <span class="close-btn" onclick="closeModal()">&times;</span>
         <h2>${nombre}</h2>
         <p>${descripcion}</p>
+        <p>coordinar consulta gratis</p>
+        <div class="gratis">
+        <a href="#">whats</a>
+        <a href="#">email</a>
+        </div>
+        
     `;
+
+    modal.style.backgroundImage = colorFondo;
+
     modal.showModal();
 }
 
