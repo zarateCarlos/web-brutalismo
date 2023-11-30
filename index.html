@@ -182,17 +182,7 @@
         </div>
 
         <section class="conocenos">
-            <div class="info">
-                <img src="/trabajo.gif" alt="gif de equipos de oficina">
-                <h3>RESILIENCIA</h3>
-                <p>
-                    En cada planificación consideramos los posibles escenarios adversos, por lo que prevemos
-                    alternativas para su resolución.
-                    Lo que parece imposible es un desafío para nosotros.
 
-                </p>
-
-            </div>
             <div class="info">
                 <img src="/compromiso.gif" alt="gif de equipos de oficina">
                 <div class="text">
@@ -213,6 +203,17 @@
                         habilidades, al servicio de tu proyecto.
                     </p>
                 </div>
+
+            </div>
+            <div class="info">
+                <img src="/trabajo.gif" alt="gif de equipos de oficina">
+                <h3>RESILIENCIA</h3>
+                <p>
+                    En cada planificación consideramos los posibles escenarios adversos, por lo que prevemos
+                    alternativas para su resolución.
+                    Lo que parece imposible es un desafío para nosotros.
+
+                </p>
 
             </div>
 
@@ -383,11 +384,70 @@
         </div>
     </div>
     <footer>
+        <h3 class="frase">El mundo es de los que hacen, no de los que dicen!</h3>
+
+
+
+        <div class="divisor">
+            <form id="form" class="formulario">
+                <div class="junto">
+                    <div class="field">
+                        <label for="from_name">Nombre Completo</label>
+                        <input type="text" name="from_name" id="from_name" required>
+                    </div>
+                    <div class="field">
+                        <label for="email_id">Email</label>
+                        <input type="email" name="email_id" id="email_id" required>
+                    </div>
+                    <div class="field">
+                        <label for="number_id">WhastsApp</label>
+                        <input type="tel" name="number_id" id="number_id">
+                    </div>
+                    <p class="aviso">no olvides completar todo antes de enviar!</p>
+                </div>
+                <div class="envio">
+                    <div class="field">
+                        <label for="message">Mensaje</label>
+                        <textarea name="message" id="message" cols="34" rows="7" required></textarea>
+                    </div>
+                    <input type="submit" id="button" value="Enviar">
+                </div>
+
+            </form>
+            <div class="contac">
+
+                <div class="icono">
+                    <div class="ico">
+                        <img src="/insta.png" alt="">
+                        <p>enlimonados@gmail.com</p>
+                    </div>
+
+                    <div class="ico">
+                        <img src="/insta.png" alt="">
+                        <p>WhastsApp</p>
+                    </div>
+
+                </div>
+                <div class="iconos">
+                    <img src="/insta.png" alt="">
+                    <img src="/insta.png" alt="">
+                </div>
+
+            </div>
+            
+        </div>
+
+
 
     </footer>
 
 
     <script src="/script.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+
+    <script type="text/javascript">
+        emailjs.init('D-6GIDCaCFGqgKG6v')
+    </script>
 </body>
 
 </html>

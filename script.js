@@ -8,8 +8,36 @@ window.onscroll = () => {
     tik.style.bottom = posicion * 0.2 + "px";
 
 
-
 }
+
+
+const btn = document.getElementById('button');
+
+document.getElementById('form')
+    .addEventListener('submit', function (event) {
+        event.preventDefault();
+
+        btn.value = 'Sending...';
+
+        const serviceID = 'default_service';
+        const templateID = 'template_uuhkt81';
+
+        emailjs.sendForm(serviceID, templateID, this)
+            .then(() => {
+                btn.value = 'Send Email';
+                document.getElementById('form').reset();
+                alert('Sent!');
+            }, (err) => {
+                btn.value = 'Send Email';
+                alert(JSON.stringify(err));
+            });
+    });
+
+
+
+
+
+
 
 window.onload = async () => {
     try {
