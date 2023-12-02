@@ -1,4 +1,24 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&family=Rock+Salt&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Mountains+of+Christmas:wght@400;700&family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
+
+
+@font-face {
+    font-family: 'Christmas Snow';
+    src: url('/Christmas\ Snow.ttf');
+    /* Formato EOT para IE9 compatibilidad */
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'grinched 2.0';
+    src: url('/Grinched\ 2.0.ttf');
+    /* Formato EOT para IE9 compatibilidad */
+    font-weight: normal;
+    font-style: normal;
+}
+
+
 
 * {
     margin: 0;
@@ -30,11 +50,20 @@ body {
     justify-content: center;
     width: 100%;
     height: 12vh;
-    background-color: #ad7bff;
+    background-color: #00bb2d;
 }
 
 .title img {
     width: 50px;
+}
+
+.title h1 {
+    font-family: 'grinched 2.0';
+    margin-top: 20px;
+    font-size: 60px;
+    font-weight: 100;
+    color: rgb(255, 0, 0);
+    -webkit-text-stroke: 1px black;
 }
 
 nav {
@@ -42,7 +71,7 @@ nav {
     align-items: center;
     justify-content: space-around;
     height: 12vh;
-    background-color: #ffffff;
+    background-color: #f80000;
     border-top: 2px solid #171719;
     border-bottom: 2px solid #171719;
     border-left: none;
@@ -57,9 +86,51 @@ nav {
 }
 
 .hoy img {
-    width: 40px;
-    height: 40px;
+    width: 80px;
+    height: 100px;
+    z-index: 10;
+    position: relative;
+    top: 30px;
+    filter: drop-shadow(5px 5px 1px black);
+
+    /* transition: transform 1s ease-in-out;
+    animation-duration: 5s;
+    animation-iteration-count: infinite; */
 }
+
+/* .move1 {
+    animation-name: moveRight;
+    animation-delay: 0s;
+}
+
+.move2 {
+    animation-name: moveRight;
+    animation-delay: 3s;
+}
+
+.move3 {
+    animation-name: moveRight;
+    animation-delay: 1s;
+}
+
+@keyframes moveRight {
+    0% {
+        transform: rotate(0);
+    }
+    50% {
+        transform:  rotate(8deg);
+    }
+    100% {
+        transform: rotate(0);
+    }
+} */
+
+
+
+
+
+
+
 
 .regalo {
     display: flex;
@@ -72,7 +143,7 @@ nav a {
 }
 
 nav a span {
-    color: red;
+    color: rgb(255, 0, 0);
     font-size: 30px
 }
 
@@ -83,9 +154,11 @@ nav a span {
 
 .navbar a {
     text-decoration: none;
-    color: #171719;
+    color: rgb(255, 255, 255);
     font-weight: 700;
     font-size: 20px;
+    -webkit-text-stroke: 1px #00bb2d;
+    text-transform: uppercase;
 }
 
 main {
@@ -102,7 +175,7 @@ main {
     width: 100%;
     height: 76vh;
     position: relative;
-    background-color: #edde38;
+    background-color: #00bb2d;
 }
 
 .heroTexto {
@@ -110,7 +183,7 @@ main {
     align-items: flex-start;
     flex-direction: column;
     justify-content: center;
-    width: 50%;
+    width: 56%;
     height: 100%;
     gap: 50px;
     transition: 300ms ease all;
@@ -118,54 +191,344 @@ main {
 }
 
 .resaltar {
-    color: rgb(255, 0, 34);
+    font-family: 'Mountains of Christmas', serif;
+    color: rgb(255, 0, 0);
+    font-size: 50px;
+    font-weight: 700;
     text-transform: uppercase;
-    -webkit-text-stroke: 1px black;
 }
 
 .heroTexto h2 {
-
-    font-size: 30px;
+    font-family: 'Mountains of Christmas', serif;
+    font-size: 40px;
+    font-weight: 700;
+    letter-spacing: 2px;
 }
 
 .heroImg {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 400px;
+    width: 200px;
     height: 400px;
     position: relative;
+    right: 170px;
 }
 
+
+
+
+
+
+@keyframes blink {
+
+    0%,
+    6%,
+    100% {
+        height: 12%;
+    }
+
+    3% {
+        height: 0%;
+    }
+}
+
+@keyframes moveMustache {
+
+    0%,
+    40%,
+    44%,
+    100% {
+        transform: translate(-100%, 0) rotate(25deg);
+    }
+
+    42% {
+        transform: translate(-100%, 0) rotate(30deg);
+    }
+}
+
+@keyframes moveMustache2 {
+
+    0%,
+    40%,
+    44%,
+    100% {
+        transform: rotate(-25deg);
+    }
+
+    42% {
+        transform: rotate(-30deg);
+    }
+}
+
+@media (prefers-reduced-motion) {
+    * {
+        animation: none !important;
+    }
+}
+
+.canvas {
+    --skin: #fca;
+    --eyes: #630a;
+    --cheeks: #f001;
+    --beard: #eee;
+    --mustache: #fff;
+    --suit: #a00;
+    --belt: #222;
+    --belt-buckle: gold;
+    width: 60vmin;
+    aspect-ratio: 1;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+
+
+.head {
+    --positionX: 27%;
+    --positionY: 63%;
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    border-radius: 50%;
+    width: 25%;
+    height: 25%;
+    transform: translate(-50%, 0);
+    background: var(--skin);
+}
+
+.eye {
+    position: absolute;
+    top: var(--positionY);
+    left: var(--positionX);
+    width: 12%;
+    height: 12%;
+    background: var(--eyes);
+    border-radius: 50%;
+    animation: blink 5s infinite linear;
+}
+
+.eye+.eye {
+    left: auto;
+    right: var(--positionX);
+}
+
+.cheek {
+    position: absolute;
+    top: calc(var(--positionY) + 7%);
+    left: calc(var(--positionX) - 12%);
+    width: 20%;
+    height: 12%;
+    background: var(--cheeks);
+    border-radius: 50%;
+}
+
+.cheek+.cheek {
+    left: auto;
+    right: calc(var(--positionX) - 12%);
+}
+
+.beard {
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    width: 30%;
+    height: 40%;
+    background: var(--beard);
+    transform: translate(-50%, 0);
+    border-radius: 100% / 120% 120% 80% 80%;
+}
+
+.mustache {
+    position: absolute;
+    top: 88%;
+    left: 52%;
+    width: 40%;
+    height: 40%;
+    background: var(--mustache);
+    border-radius: 100% 10% 100% 0;
+    transform-origin: top right;
+    transform: translate(-100%, 0) rotate(25deg);
+    animation: moveMustache 7s infinite linear;
+}
+
+.mustache+.mustache {
+    left: 48%;
+    border-radius: 10% 100% 0 100%;
+    transform-origin: top left;
+    transform: rotate(-25deg);
+    animation: moveMustache2 7s infinite linear;
+}
+
+.hat {
+    position: absolute;
+    width: 98%;
+    height: 80%;
+    background: var(--suit);
+    border-radius: 100% 20% 0 0;
+    top: -40%;
+    left: 50%;
+    transform: translate(-50%, 0) rotate(1deg);
+}
+
+.hat::before {
+    content: "";
+    display: block;
+    position: absolute;
+    bottom: -17%;
+    left: -5%;
+    width: 110%;
+    height: 40%;
+    border-radius: 100% / 50%;
+    transform: rotate(-2deg);
+    background: radial-gradient(200% 100% at 50% 100%, #0000 30%, var(--mustache) 31%);
+}
+
+.hat::after {
+    content: "";
+    display: block;
+    position: absolute;
+    right: -25%;
+    top: -15%;
+    width: 40%;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    background: var(--beard);
+}
+
+.body {
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    width: 50%;
+    height: 50%;
+    background: var(--suit);
+    border-radius: 100% / 150% 150% 25% 25%;
+    transform: translate(-50%, 0);
+    background-image:
+        /* buttons */
+        radial-gradient(circle at 50% 36%, var(--belt) 2.75%, #0000 3%),
+        radial-gradient(circle at 50% 48%, var(--belt) 3%, #0000 3.25%),
+        radial-gradient(circle at 50% 60%, var(--belt) 2.75%, #0000 3%),
+        radial-gradient(circle at 50% 90%, var(--belt) 2.25%, #0000 2.5%),
+        /* belt */
+        radial-gradient(circle at 50% -50%, transparent 75%, var(--belt) 75.1% 83%, transparent 83.1%),
+        /* flap */
+        linear-gradient(to right, transparent 42%, white 42.2% 57%, transparent 57.2%);
+    clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 51% 100%, 50% 96%, 49% 100%, 0% 100%);
+}
+
+.belt {
+    position: absolute;
+    top: 75%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 23%;
+    height: 15%;
+    background:
+        linear-gradient(var(--belt-buckle) 0 0) 75% 50% / 25% 12% no-repeat,
+        linear-gradient(var(--belt) 0 0) 50% 50% / 85% 80% no-repeat,
+        var(--belt-buckle);
+}
+
+
+.arms {
+    position: absolute;
+    top: 37%;
+    left: 50%;
+    transform: translate(-50%, 0);
+    width: 65%;
+    height: 40%;
+    background: #a00;
+    border-radius: 100% / 170% 170% 25% 25%;
+    background-image: linear-gradient(transparent 20%, #0003);
+}
+
+.hand {
+    --positionX: 18%;
+    position: absolute;
+    top: 70%;
+    left: var(--positionX);
+    width: 13%;
+    height: 13%;
+    background: var(--belt);
+    border-radius: 50%;
+}
+
+.hand+.hand {
+    left: auto;
+    right: var(--positionX);
+}
+
+.leg {
+    position: absolute;
+    top: 75%;
+    left: 29%;
+    width: 19%;
+    height: 25%;
+    background: var(--suit);
+    transform: skew(2deg);
+    background-image: linear-gradient(#0002, transparent 70%, var(--belt) 0);
+}
+
+.leg+.leg {
+    left: 52%;
+}
+
+.leg::after {
+    content: "";
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: -6%;
+    width: 110%;
+    height: 20%;
+    background: black;
+    border-radius: 50% / 100% 100% 0 0;
+}
+
+.leg+.leg::after {
+    left: -4%;
+}
+
+
+
+
+
+
+
+
+
+
+
 .heroTexto a {
-    padding: 10px 20px;
+    padding: 4px 12px;
+    letter-spacing: 3px;
     box-shadow: 6px 6px black;
     background-color: red;
     color: #f2f4f0;
-    font-weight: 700;
-    font-size: 30px;
+    font-weight: 500;
+    font-size: 40px;
     text-decoration: none;
     border-radius: 15px;
     transition: 300ms ease all;
+    font-family: 'grinched 2.0';
 
 }
 
 .heroTexto a:hover {
     background-color: #171719;
-    box-shadow: 5px 5px red;
+    box-shadow: 5px 5px rgb(255, 255, 255);
 }
 
 
 .heroImg img {
     width: 150px;
-    position: absolute;
 }
 
-.heroImg svg {
-    position: absolute;
-    width: 500px;
-
-}
 
 
 
@@ -196,6 +559,11 @@ main {
 
 }
 
+.slider img {
+    width: 70px;
+    margin: 0 20px;
+}
+
 
 @keyframes scroll {
     from {
@@ -212,7 +580,7 @@ main {
 /*porque*/
 
 .titulo {
-    margin: 20px auto;
+    margin: 30px auto;
     text-align: center;
     width: 100%;
     width: 600px;
@@ -223,7 +591,7 @@ main {
 }
 
 .marco {
-    margin: 20px auto;
+    margin: 30px auto;
     text-align: center;
     width: 100%;
     width: 500px;
@@ -249,17 +617,28 @@ main {
 .info {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: flex-start;
     width: 350px;
+    height: 238px;
     margin: 20px;
-    padding: 10px;
+    padding: 15px;
+    padding-top: 0;
     border: 2px solid black;
     box-shadow: 6px 6px black;
 }
 
+.juntos {
+    display: flex;
+    align-items: center;
+    text-align: start;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+}
+
+
 .info img {
-    width: 100px;
-    height: 100px;
+    width: 80px;
+    height: 80px;
 }
 
 /*redes*/
@@ -284,6 +663,7 @@ main {
 }
 
 .tik {
+    width: 100px;
     z-index: 100;
     position: relative;
     margin-top: 400px;
@@ -315,7 +695,6 @@ main {
     margin: 20px;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
 
 }
 
@@ -331,13 +710,17 @@ main {
     width: 100%;
     height: 250px;
     background-color: #ad7bff;
-    margin-bottom: 40px;
     position: relative;
-    bottom: 50px;
+    bottom: 14%;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
+    padding: 28px;
+}
+
+.servicio:nth-of-type(2) .item h4 {
+    margin-top: 50px;
 }
 
 .servicio:nth-of-type(2) .item {
@@ -386,6 +769,26 @@ main {
 
 }
 
+.consulta {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+}
+
+.consulta h3 {
+    font-size: 26px;
+    color: #000000;
+    /* -webkit-text-stroke: 1px black; */
+}
+
+.consulta h4 {
+    font-weight: bold;
+    font-size: 20px;
+    color: #000000;
+    /* -webkit-text-stroke: 1px rgb(0, 0, 0); */
+}
+
 .gracias {
     width: 90%;
     height: 20vh;
@@ -396,6 +799,7 @@ main {
     align-items: center;
     justify-content: space-around;
     text-transform: uppercase;
+    font-size: 20px;
 }
 
 .color {
@@ -498,7 +902,7 @@ main {
     margin: 30px auto;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-evenly;
     flex-wrap: wrap;
     height: 100%;
     padding: 5px;
@@ -507,41 +911,67 @@ main {
 
 .amigo {
     display: flex;
-    width: 480px;
-    align-items: center;
-    justify-content: center;
-    gap: 20px;
+    width: 550px;
+    height: 430px;
     border: 2px solid #171719;
     padding: 20px;
     box-shadow: 8px 8px black;
     background-color: #69d2e7;
+    flex-direction: column;
+    justify-content: space-between;
 
 }
 
-.foto {
+.testimonio {
     display: flex;
+    justify-content: space-between;
     align-items: center;
-    justify-content: center;
-    border: 2px solid black;
-    width: 120px;
-    height: 120px;
-    border-radius: 50%;
-    background-color: rgb(220, 207, 20);
+}
+
+.testimonio h2 {
+    font-weight: 900;
+    font-size: 30px;
+}
+
+.son {
+    color: rgb(255, 234, 0);
+    -webkit-text-stroke: 1px rgb(0, 0, 0);
+    font-size: 24px;
+    letter-spacing: 3px;
+    position: relative;
+    bottom: 30px;
+}
+
+.amigo:nth-child(4) .son {
+    bottom: 10px;
+}
+
+
+
+.lin img {
+    width: 50px;
 }
 
 .foto img {
-    width: 100px;
-    height: 100px;
+    width: 80px;
+    height: 80px;
+
+
+}
+
+.nada {
+    width: 80px;
+    height: 80px;
     border-radius: 50%;
     border: 2px solid black;
-
+    background-color: #ffffff;
 }
 
 
 footer {
     width: 100%;
     height: 100%;
-    padding: 40px;
+    padding: 35px;
     margin: 0 auto 50px;
     background-color: #edde38;
     box-shadow: 0px 8px black;
@@ -554,12 +984,12 @@ footer {
     flex-direction: column;
 
 }
-.frase{
+
+.frase {
     font-size: 40px;
     text-transform: uppercase;
-    margin-top: -30px;
     margin-bottom: 50px;
-    filter: drop-shadow(5px 5px 2px rgb(255, 0, 230));
+
 }
 
 .formulario {
@@ -569,7 +999,7 @@ footer {
     gap: 40px;
     width: 50%;
     justify-content: center;
-    flex-wrap: wrap;
+
 }
 
 .envio {
@@ -590,8 +1020,8 @@ footer {
     margin-top: 14px;
     text-transform: uppercase;
     position: absolute;
-    color: #6200ff;
-    -webkit-text-stroke: 1px black;
+    color: #000000;
+    /* -webkit-text-stroke: 1px black; */
 }
 
 
@@ -648,7 +1078,6 @@ input[type="submit"]:hover {
     width: 100%;
     justify-content: center;
     align-items: center;
-    flex-wrap: wrap;
 }
 
 .ico {
@@ -657,27 +1086,40 @@ input[type="submit"]:hover {
 
 }
 
+
 .icono {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
 
 }
-.iconos{
+
+.iconos {
     display: flex;
     align-items: center;
 
 }
 
-.icono img {
-    width: 50px;
+.iconos img {
+    width: 70px;
 }
-.divisor{
+
+.icono img {
+    width: 70px;
+}
+
+.ico p {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.divisor {
     display: flex;
     align-items: center;
     gap: 50px;
 }
-.mc{
+
+.mc {
     align-items: center;
 }
 
@@ -698,8 +1140,12 @@ input[type="submit"]:hover {
 }
 
 @media (min-width:320px) and (max-width: 767px) {
+
+
     nav {
         height: 5vh;
+        /* background-color: #ff7b7b; */
+        background-color: #f80000;
         width: 100%;
 
     }
@@ -713,7 +1159,9 @@ input[type="submit"]:hover {
 
     .hoy img {
         width: 40px;
-        height: 40px;
+        height: 60px;
+        top: 10px;
+        filter: drop-shadow(5px 5px 1px black);
     }
 
 
@@ -722,12 +1170,19 @@ input[type="submit"]:hover {
 
     }
 
+    .title {
+        height: 10vh;
+        background-color: #00bb2d;
+    }
+
     .title h1 {
         display: flex;
         align-items: center;
-        font-size: 25px;
+        -webkit-text-stroke: 1px black;
+        font-size: 35px;
         height: 10vh;
         gap: 7px;
+        margin-top: 10px;
     }
 
     .regalo {
@@ -738,36 +1193,44 @@ input[type="submit"]:hover {
 
     .hero {
         flex-wrap: wrap;
-        align-items: center;
+        align-items: flex-start;
         justify-content: center;
         height: 100%;
     }
 
     .heroTexto {
+        display: flex;
+        justify-content: flex-start;
         align-items: center;
-        margin-top: 0px;
-        width: 90%;
+        margin-top: 20px;
+        width: 92%;
     }
 
     .heroTexto h2 {
         font-size: 22px;
         text-align: center;
         margin-top: 20px;
+        font-weight: 900;
+        letter-spacing: 0px;
 
+    }
+
+    .resaltar {
+        font-size: 22px;
+        font-weight: 900;
     }
 
     .heroTexto a {
-        font-size: 18px;
+        font-size: 22px;
         margin-top: -25px;
     }
 
-    .heroImg svg {
+    .heroImg {
         width: 300px;
+        height: 300px;
+        right: 0;
     }
 
-    .heroImg {
-        margin-bottom: -20px;
-    }
 
 
     .slideres {
@@ -776,12 +1239,14 @@ input[type="submit"]:hover {
     }
 
     .slider img {
-        width: 50px;
+        width: 45px;
+        margin-top: 5px;
     }
 
     .titulo {
         width: 310px;
         padding: 5px 8px;
+        margin-top: 40px;
     }
 
     .marco {
@@ -794,6 +1259,11 @@ input[type="submit"]:hover {
     .marco h2 {
         font-size: 20px;
     }
+
+    .info {
+        height: 100%;
+    }
+
 
     .redes {
         width: 90%;
@@ -847,6 +1317,21 @@ input[type="submit"]:hover {
         width: 100%;
     }
 
+    .consulta h3 {
+        text-align: center;
+        width: 120%;
+        font-size: 20px;
+
+    }
+
+    .consulta h4 {
+        text-align: center;
+        font-size: 16px;
+    }
+
+    .coordinar img {
+        width: 60px;
+    }
 
     .gracias {
         height: 100px;
@@ -865,10 +1350,32 @@ input[type="submit"]:hover {
 
     .amigo {
         width: 95%;
+        height: 100%;
+
+    }
+
+    .amigos {
+        margin-bottom: 20px;
+    }
+
+    .foto img {
+
+        width: 70px;
+    }
+
+    .testimonio h2 {
+        font-size: 22px;
+    }
+
+    .son {
+        font-size: 20px;
+        font-weight: 900;
+        bottom: 10px;
     }
 
     footer {
         width: 100%;
+        padding: 8px;
     }
 
     .flotante {
@@ -902,35 +1409,64 @@ input[type="submit"]:hover {
         font-size: 14px;
     }
 
-    .hero {
-        height: 50vh;
-    }
+
 
     .heroTexto a {
         margin-bottom: 20px;
     }
 
-    .heroImg {
-        display: none;
+
+    .contac {
+        flex-direction: column;
     }
 
-    .contac{
+    .divisor {
         flex-direction: column;
     }
-    .divisor{
-        flex-direction: column;
+
+    .iconos {
+        width: 100%;
+        align-items: center;
+        justify-content: center;
     }
-    .iconos{
-        flex-direction: column;
-        align-items: none;
-    }
-    .iconos img{
+
+    .ico img {
         width: 50px;
     }
-    .frase{
-        font-size: 20px;
+
+    .ico p {
+        font-size: 16px;
     }
+
+    .iconos img {
+
+        width: 50px;
+        margin-bottom: 50px;
+
+    }
+
+    .frase {
+        font-size: 20px;
+        text-align: center;
+        width: 100%;
+    }
+
     textarea {
-        width: 250px;
+        width: 300px;
+    }
+
+    .formulario {
+        flex-wrap: wrap;
+    }
+
+    input[type="submit"] {
+        margin-left: 195px;
+    }
+    .aviso{
+        text-align: center;
+        position: inherit;
+    }
+    .envio{
+        margin-top: -10px;
     }
 }
