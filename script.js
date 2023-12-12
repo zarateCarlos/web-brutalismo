@@ -71,6 +71,7 @@ function createServiceElement(servicio) {
     const img = document.createElement('img');
     img.src = '/icons8-estrella-100.png';
     img.alt = 'icono estrella';
+    img.loading = 'lazy';
     div.appendChild(img);
 
     const itemDiv = document.createElement('div');
@@ -83,7 +84,7 @@ function createServiceElement(servicio) {
     const button = document.createElement('button');
     button.classList.add('view-modal-btn');
     button.textContent = 'saber mas';
-    button.onclick = () => openModal(servicio.nombre.replace(/\n/g, `<br>`), servicio.descripcion.replace(/\n/g, `<br>`), servicio.colorFondo); // Pasa nombre y descripción al abrir el modal
+    button.onclick = () => openModal(servicio.nombre.replace(/\n/g, `<br>`), servicio.descripcion.replace(/\n/g, `<br>`), servicio.colorFondo, servicio.numero); // Pasa nombre y descripción al abrir el modal
     itemDiv.appendChild(button);
 
 
@@ -94,15 +95,15 @@ function createServiceElement(servicio) {
 }
 
 
-function openModal(nombre, descripcion, colorFondo) {
+function openModal(nombre, descripcion, colorFondo, numero) {
     const modal = document.getElementById('myModal');
     modal.innerHTML = `
         <span class="close-btn" onclick="closeModal()">&times;</span>
         <h2>${nombre}</h2>
         <p>${descripcion}</p>
-        <p>COORDINAR CONSULTA GRATIS</p>
-        <div class="gratis">
-        <a href="#">whats</a>
+        <p class="pepe">COORDINAR CONSULTA GRATIS</p>
+        <div class="coordinar gratiss">
+        <a target="_blank" href=${numero}><img loading="lazy" src="/whatsapp.png" alt="">WhatsApp</a>
         </div>
         
     `;

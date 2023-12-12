@@ -2,37 +2,43 @@
     {
         "id": 1,
         "nombre": "DESARROLLO WEB",
-        "descripcion": "Creamos la estructura del sitio web conforme a las necesidades y lo adaptamos a cualquier dispositivo\n\nOptimizamos su rendimiento, lo que mejora la experiencia del usuario y el posicionamiento en motores de búsqueda.\n\n Realizamos el mantenimiento del sitio:\n modificaciones, incorporación de nuevas características y contenido a medida que sea necesario.",
-        "colorFondo": "linear-gradient(to left, #ad7bff, #ad7bff, #ad7bff, #ad7bff, #ad7bff, #b287ff, #b893ff, #be9eff, #ccb7ff, #dccfff, #ede7ff, #ffffff)"
+        "descripcion": "Creamos la estructura del sitio web conforme a las necesidades y lo adaptamos a cualquier dispositivo.\n\nOptimizamos su rendimiento, lo que mejora la experiencia del usuario y el posicionamiento en motores de búsqueda.\n\n Realizamos el mantenimiento del sitio:\n modificaciones, incorporación de nuevas características y contenido a medida que sea necesario.",
+        "colorFondo": "linear-gradient(to left, #ad7bff, #ad7bff, #ad7bff, #ad7bff, #ad7bff, #b287ff, #b893ff, #be9eff, #ccb7ff, #dccfff, #ede7ff, #ffffff)",
+        "numero": "https://wa.me/541162937028"
     },
     {
         "id": 2,
         "nombre": "UI - UX",
         "descripcion": "Realizamos el diseño gráfico de los elementos de la interfaz, seleccionamos la tipografía y los colores.\n\n Creamos una estética única, atractiva y coherente para destacar el sitio web.\n\n Hacemos pruebas de experiencia de usuario y las analizamos con el fin de optimizar la interfaz y sus funcionalidades.",
-        "colorFondo": "linear-gradient(to left, #7fbc8c, #7fbc8c, #7fbc8c, #7fbc8c, #7fbc8c, #7cc3a1, #7dcab4, #83d0c6, #a0dbe5, #c7e5f6, #e9f0fc, #ffffff)"
+        "colorFondo": "linear-gradient(to left, #7fbc8c, #7fbc8c, #7fbc8c, #7fbc8c, #7fbc8c, #7cc3a1, #7dcab4, #83d0c6, #a0dbe5, #c7e5f6, #e9f0fc, #ffffff)",
+        "numero": "https://wa.me/541162937028"
     },
     {
         "id": 3,
         "nombre": "MARKETING DIGITAL",
         "descripcion": "Desarrollamos campañas estratégicas adaptadas a los objetivos de cada proyecto y hacemos el seguimiento adecuado.\n\n Diseñamos Social Ads para ganar visibilidad y aumentar el tráfico en redes sociales.\n\n Realizamos servicios de SEO para optimizar la presencia en línea.",
-        "colorFondo": "linear-gradient(to left, #ff69b4, #ff69b4, #ff69b4, #ff69b4, #ff69b4, #fd79c2, #fa89cf, #f797da, #f1b5ee, #eed0fa, #f2e9ff, #ffffff)"
+        "colorFondo": "linear-gradient(to left, #ff69b4, #ff69b4, #ff69b4, #ff69b4, #ff69b4, #fd79c2, #fa89cf, #f797da, #f1b5ee, #eed0fa, #f2e9ff, #ffffff)",
+        "numero": "https://wa.me/541162937028"
     },
     {
         "id": 4,
         "nombre": "SOCIAL MEDIA",
         "descripcion": "Investigamos el área de cada proyecto.\n\n Planificamos las acciones y definimos objetivos, público y redes sociales convenientes. \n\n Realizamos el análisis de las métricas y evaluamos las estrategias.",
-        "colorFondo": "linear-gradient(to left, #69d2e7, #69d2e7, #69d2e7, #69d2e7, #69d2e7, #7cd5ee, #8dd8f3, #9edbf7, #c0e2fd, #dceaff, #f1f3ff, #ffffff)"
+        "colorFondo": "linear-gradient(to left, #69d2e7, #69d2e7, #69d2e7, #69d2e7, #69d2e7, #7cd5ee, #8dd8f3, #9edbf7, #c0e2fd, #dceaff, #f1f3ff, #ffffff)",
+        "numero": "https://wa.me/541132005669"
     },
     {
         "id": 5,
         "nombre": "COMMUNITY MANAGEMENT",
         "descripcion": "Ejecutamos la planificación previamente realizada.\n\n Gestionamos las distintas comunidades, moderamos comentarios y mantenemos el feedback.",
-        "colorFondo": "linear-gradient(to left, #9723c9, #9723c9, #9723c9, #9723c9, #9723c9, #9c40d1, #a256d9, #a869e0, #b891ed, #ccb7f6, #e3dbfc, #ffffff)"
+        "colorFondo": "linear-gradient(to left, #9723c9, #9723c9, #9723c9, #9723c9, #9723c9, #9c40d1, #a256d9, #a869e0, #b891ed, #ccb7f6, #e3dbfc, #ffffff)",
+        "numero": "https://wa.me/541132005669"
     },
     {
         "id": 6,
         "nombre": "CONTENIDO AUDIOVISUAL",
         "descripcion": "Realizamos edición audiovisual para redes sociales.\n\n Ideamos el contenido exclusivo para cada plataforma, para generar que cada proyecto se destaque y tenga mayor interacción con su comunidad.",
-        "colorFondo": "linear-gradient(to left, #e3a018, #e3a018, #e3a018, #e3a018, #e3a018, #f39e42, #fc9e62, #ffa17e, #ffb3b7, #ffcde2, #fae8fa, #ffffff)"
+        "colorFondo": "linear-gradient(to left, #e3a018, #e3a018, #e3a018, #e3a018, #e3a018, #f39e42, #fc9e62, #ffa17e, #ffb3b7, #ffcde2, #fae8fa, #ffffff)",
+        "numero": "https://wa.me/541132005669"
     }
 ]

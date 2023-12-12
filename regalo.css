@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Mountains+of+Christmas:wght@400;700&family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Festive&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+html,
+body {
+    scroll-behavior: smooth;
+    background: radial-gradient(rgb(205, 62, 62), red);
+    height: 100vh;
+
+}
+h2{
+    font-family: 'Festive', cursive;
+    font-size: 100px;
+    text-align: center;
+    color: azure;
+    filter: drop-shadow(5px 5px 0px black);
+}
+p {
+    color: rgb(7, 7, 7);
+    font-size: 30px;
+    font-weight: 900;
+    width: 80%;
+    text-align: center;
+    margin: 0 auto;
+
+}
+form{
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    gap: 40px;
+}
+@media (min-width:320px) and (max-width: 767px)  {
+    h2{
+        font-size: 50px;
+    }
+    p{
+        font-size: 16px;
+    }
+    form{
+        flex-wrap: wrap;
+        width: 90%;
+        margin: 30px auto 0px;
+        
+    }
+    .regalos-opciones{
+        text-align: center;
+    }
+}

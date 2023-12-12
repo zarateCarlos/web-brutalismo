@@ -51,6 +51,7 @@ body {
     width: 100%;
     height: 12vh;
     background-color: #00bb2d;
+
 }
 
 .title img {
@@ -71,11 +72,14 @@ nav {
     align-items: center;
     justify-content: space-around;
     height: 12vh;
+    width: 100%;
     background-color: #f80000;
     border-top: 2px solid #171719;
     border-bottom: 2px solid #171719;
     border-left: none;
     border-right: none;
+
+
 }
 
 .hoy {
@@ -93,41 +97,7 @@ nav {
     top: 30px;
     filter: drop-shadow(5px 5px 1px black);
 
-    /* transition: transform 1s ease-in-out;
-    animation-duration: 5s;
-    animation-iteration-count: infinite; */
 }
-
-/* .move1 {
-    animation-name: moveRight;
-    animation-delay: 0s;
-}
-
-.move2 {
-    animation-name: moveRight;
-    animation-delay: 3s;
-}
-
-.move3 {
-    animation-name: moveRight;
-    animation-delay: 1s;
-}
-
-@keyframes moveRight {
-    0% {
-        transform: rotate(0);
-    }
-    50% {
-        transform:  rotate(8deg);
-    }
-    100% {
-        transform: rotate(0);
-    }
-} */
-
-
-
-
 
 
 
@@ -183,7 +153,7 @@ main {
     align-items: flex-start;
     flex-direction: column;
     justify-content: center;
-    width: 56%;
+    width: 60%;
     height: 100%;
     gap: 50px;
     transition: 300ms ease all;
@@ -200,7 +170,7 @@ main {
 
 .heroTexto h2 {
     font-family: 'Mountains of Christmas', serif;
-    font-size: 40px;
+    font-size: 36px;
     font-weight: 700;
     letter-spacing: 2px;
 }
@@ -209,11 +179,46 @@ main {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 200px;
     height: 400px;
     position: relative;
-    right: 170px;
+    right: 130px;
 }
+
+.renos {
+    position: absolute;
+    bottom: 10px;
+    scale: 1.4;
+    left: 120%;
+}
+
+.slideres .sliderTrack .slider .amarrilla {
+    width: 80px;
+}
+
+.slideres .sliderTrack .slider .bola {
+
+    animation-name: luces;
+    animation-duration: 0.5s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: linear;
+
+}
+
+@keyframes luces {
+
+    0%,
+    35% {
+        filter: brightness(1.8) drop-shadow(0 0 20px rgba(247, 210, 0));
+    }
+
+    45%,
+    100% {
+        filter: brightness(1);
+    }
+}
+
+
 
 
 
@@ -279,9 +284,10 @@ main {
     width: 60vmin;
     aspect-ratio: 1;
     position: absolute;
-    top: 50%;
+    top: 55%;
     left: 50%;
     transform: translate(-50%, -50%);
+    z-index: 2;
 }
 
 
@@ -519,6 +525,31 @@ main {
 
 }
 
+
+
+
+
+.boton {
+    position: relative;
+}
+
+.button-hat {
+    position: absolute;
+    top: -15px;
+    left: -17px;
+    height: 44px;
+    filter: drop-shadow(0 2px 1px rgb(0 0 0 / .25));
+}
+
+
+
+
+
+
+
+
+
+
 .heroTexto a:hover {
     background-color: #171719;
     box-shadow: 5px 5px rgb(255, 255, 255);
@@ -559,8 +590,12 @@ main {
 
 }
 
-.slider img {
+.slider .amarrilla {
     width: 70px;
+}
+
+.slider img {
+    width: 90px;
     margin: 0 20px;
 }
 
@@ -580,13 +615,12 @@ main {
 /*porque*/
 
 .titulo {
-    margin: 30px auto;
+    margin: 10px auto;
     text-align: center;
     width: 100%;
     width: 600px;
     padding: 5px;
-    border-radius: 50px;
-    border: 2px solid black;
+
 
 }
 
@@ -700,9 +734,9 @@ main {
 
 .servicio img {
     position: relative;
-    width: 100px;
-    bottom: 50px;
-    right: 50px;
+    width: 80px;
+    bottom: 60px;
+    right: 40px;
 
 }
 
@@ -786,7 +820,46 @@ main {
     font-weight: bold;
     font-size: 20px;
     color: #000000;
+    align-items: center;
+    gap: 5px;
     /* -webkit-text-stroke: 1px rgb(0, 0, 0); */
+}
+
+.consulta h4 .gratis {
+    -webkit-text-stroke: 1px rgb(0, 0, 0);
+    color: rgb(225, 19, 19);
+}
+
+.coordinar {
+    padding: 4px 8px;
+    background-color: #00bb2d;
+    box-shadow: 5px 5px 0px black;
+    transition: 0.3s all ease;
+}
+
+.coordinar:hover {
+    transform: translateX(6px) translateY(6px);
+    box-shadow: 0px 0px black;
+    outline: 2px solid black;
+    border-radius: 5px;
+}
+
+.coordinar:hover a {
+    color: black;
+}
+
+
+.coordinar a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #fdfffc;
+    font-weight: bold;
+
+}
+
+.coordinar a img {
+    width: 30px;
 }
 
 .gracias {
@@ -822,7 +895,7 @@ main {
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
     width: 60%;
-    top: 20%;
+    top: 10%;
     margin: 0 auto;
     position: fixed;
     transform: scale(0.5);
@@ -835,20 +908,25 @@ main {
 .modal p {
     width: 70%;
     margin-bottom: 20px;
+
 }
 
-.gratis {
+.pepe {
+    position: relative;
+    left: 30%;
+    text-align: end;
+    font-weight: 600;
+}
+
+.gratiss {
     display: flex;
-    gap: 20px;
-    justify-content: end;
+    width: 20%;
+    align-items: center;
+    justify-content: center;
+    margin-left: 80%;
 }
 
-.gratis a {
-    text-decoration: none;
-    padding: 4px 8px;
-    background-color: rgb(67, 203, 22);
-    color: #000000;
-}
+
 
 
 .modal[open] {
@@ -902,7 +980,7 @@ main {
     margin: 30px auto;
     display: flex;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: center;
     flex-wrap: wrap;
     height: 100%;
     padding: 5px;
@@ -911,8 +989,8 @@ main {
 
 .amigo {
     display: flex;
-    width: 550px;
-    height: 430px;
+    width: 480px;
+    height: 380px;
     border: 2px solid #171719;
     padding: 20px;
     box-shadow: 8px 8px black;
@@ -939,24 +1017,29 @@ main {
     font-size: 24px;
     letter-spacing: 3px;
     position: relative;
-    bottom: 30px;
-}
-
-.amigo:nth-child(4) .son {
-    bottom: 10px;
+    bottom: px;
 }
 
 
+.lin {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
 
 .lin img {
-    width: 50px;
+    width: 40px;
 }
 
-.foto img {
-    width: 80px;
-    height: 80px;
+.amigo .lin a img.chico {
+    width: 46px;
+    height: 46px;
+}
 
-
+.iconos A .chico {
+    width: 46px;
+    height: 46px;
+    margin-left: -3px;
 }
 
 .nada {
@@ -1096,16 +1179,27 @@ input[type="submit"]:hover {
 
 .iconos {
     display: flex;
-    align-items: center;
+    align-items: flex-start;
+    flex-direction: column;
+    justify-content: flex-start;
 
 }
 
-.iconos img {
-    width: 70px;
+.iconos a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    justify-content: flex-start;
+    color: #000000;
+    font-weight: 600;
+}
+
+.iconos a:hover {
+    color: rgb(255, 0, 0);
 }
 
 .icono img {
-    width: 70px;
+    width: 40px;
 }
 
 .ico p {
@@ -1122,6 +1216,16 @@ input[type="submit"]:hover {
 .mc {
     align-items: center;
 }
+
+
+
+
+
+
+
+
+
+
 
 @media (min-width: 768px) and (max-width: 1025px) {
     .gracias h2 {
@@ -1196,6 +1300,7 @@ input[type="submit"]:hover {
         align-items: flex-start;
         justify-content: center;
         height: 100%;
+        overflow: hidden;
     }
 
     .heroTexto {
@@ -1229,8 +1334,20 @@ input[type="submit"]:hover {
         width: 300px;
         height: 300px;
         right: 0;
+        bottom: 10px;
     }
 
+    .renos {
+        left: 90%;
+        z-index: 2;
+        bottom: 60px;
+    }
+
+    .contenedorArbol .arbol {
+        bottom: 25px;
+        /* width: 380px; */
+        scale: 0.9;
+    }
 
 
     .slideres {
@@ -1239,14 +1356,14 @@ input[type="submit"]:hover {
     }
 
     .slider img {
-        width: 45px;
+        width: 70px;
         margin-top: 5px;
     }
 
     .titulo {
         width: 310px;
         padding: 5px 8px;
-        margin-top: 40px;
+        margin: 50px auto 30px;
     }
 
     .marco {
@@ -1267,7 +1384,7 @@ input[type="submit"]:hover {
 
     .redes {
         width: 90%;
-        margin: 50px auto 50px;
+        margin: 40px auto 0px;
         padding: 0;
     }
 
@@ -1303,7 +1420,7 @@ input[type="submit"]:hover {
 
     .servicio img {
         width: 80px;
-        bottom: 40px;
+        bottom: 50px;
         right: 40px;
     }
 
@@ -1326,7 +1443,7 @@ input[type="submit"]:hover {
 
     .consulta h4 {
         text-align: center;
-        font-size: 16px;
+        font-size: 14px;
     }
 
     .coordinar img {
@@ -1337,6 +1454,7 @@ input[type="submit"]:hover {
         height: 100px;
         width: 90%;
         padding-left: 10px;
+        margin: 30px auto 0;
     }
 
     .gracias h2 {
@@ -1355,12 +1473,14 @@ input[type="submit"]:hover {
     }
 
     .amigos {
-        margin-bottom: 20px;
+        margin-top: 0;
+        margin-bottom: 0px;
     }
 
     .foto img {
 
         width: 70px;
+        height: 70px;
     }
 
     .testimonio h2 {
@@ -1376,6 +1496,7 @@ input[type="submit"]:hover {
     footer {
         width: 100%;
         padding: 8px;
+        margin-top: 50px;
     }
 
     .flotante {
@@ -1427,28 +1548,37 @@ input[type="submit"]:hover {
     .iconos {
         width: 100%;
         align-items: center;
+        flex-direction: row;
         justify-content: center;
+        margin-bottom: 50px;
+        margin-top: 30px;
+        gap: 20px;
+    }
+
+    .iconos a {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        font-weight: 400;
+        font-size: 12px;
+
     }
 
     .ico img {
-        width: 50px;
+        width: 40px;
     }
 
     .ico p {
-        font-size: 16px;
+        font-size: 13px;
     }
 
-    .iconos img {
-
-        width: 50px;
-        margin-bottom: 50px;
-
-    }
 
     .frase {
         font-size: 20px;
         text-align: center;
         width: 100%;
+        margin-top: 30px;
     }
 
     textarea {
@@ -1462,11 +1592,29 @@ input[type="submit"]:hover {
     input[type="submit"] {
         margin-left: 195px;
     }
-    .aviso{
+
+    .aviso {
         text-align: center;
         position: inherit;
     }
-    .envio{
+
+    .envio {
         margin-top: -10px;
     }
+
+    .gratiss {
+        width: inherit;
+        margin-left: 10px;
+
+
+    }
+
+    .pepe {
+        width: inherit;
+        left: inherit;
+        font-weight: 700;
+        font-size: 14px;
+        text-align: center;
+    }
+
 }
