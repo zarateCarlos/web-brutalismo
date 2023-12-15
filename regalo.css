@@ -21,42 +21,105 @@ body {
     height: 100vh;
 
 }
-h2{
+
+h2 {
     font-family: 'Festive', cursive;
     font-size: 100px;
     text-align: center;
     color: azure;
     filter: drop-shadow(5px 5px 0px black);
 }
+
 p {
     color: rgb(7, 7, 7);
     font-size: 30px;
-    font-weight: 900;
-    width: 80%;
+    font-weight: 500;
+    width: 90%;
     text-align: center;
-    margin: 0 auto;
+    margin: 0 auto 30PX;
 
 }
-form{
+
+form {
     display: flex;
-    align-items:center;
+    align-items: center;
     justify-content: center;
     gap: 40px;
 }
-@media (min-width:320px) and (max-width: 767px)  {
-    h2{
+
+form input {
+    border-radius: 20px;
+    filter: drop-shadow(5px 5px 0px black);
+    padding: 8px 12px;
+}
+
+.datos-regalo {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 30px;
+
+}
+
+.regalos-opciones {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+.juntos {
+    display: flex;
+    align-items: center;
+    margin-bottom: 22px;
+    gap: 20px;
+    font-weight: 700;
+}
+
+.regalos-opciones input {
+    width: 30px;
+    height: 30px;
+
+}
+
+.veve {
+    width: 120px;
+    height: 50px;
+    font-weight: 700;
+    font-size: 16px;
+    transition: 0.3s all ease;
+}
+
+.veve:hover {
+    background-color: rgb(12, 159, 17);
+    color: aliceblue;
+    border: 2px solid white;
+    filter: drop-shadow(5px 5px 0px rgba(255, 255, 255, 0));
+}
+
+@media (min-width:320px) and (max-width: 767px) {
+    h2 {
         font-size: 50px;
     }
-    p{
+
+    p {
         font-size: 16px;
     }
-    form{
+
+    form {
         flex-wrap: wrap;
         width: 90%;
         margin: 30px auto 0px;
-        
+        gap: 10px;
+
     }
-    .regalos-opciones{
+
+    .regalos-opciones {
         text-align: center;
+        margin-bottom: 0px;
+    }
+    .juntos{
+        font-size: 12px;
+    }
+    .veve{
+        margin-bottom: 40px;
     }
 }

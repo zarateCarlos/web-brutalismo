@@ -5,39 +5,50 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>M&C - Regalos</title>
-    <link rel="stylesheet" href="regalo.css">
+    <link rel="stylesheet" href="regalo.css?v=2">
+    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+    <script>
+        (function () {
+            emailjs.init("D-6GIDCaCFGqgKG6v"); // Reemplaza "user_tuUserID" con tu User ID de EmailJS
+        })();
+    </script>
 </head>
 
 <body>
-    <h2>¡felices fiestas!</h2>
-    <p>En Marian & Charlie queremos ayudarte a crecer dia a dia. <br> En esta ocacion a Traves de estos REGALOS, <br>
-        FELICITACIONES!!! </p>
+    <h2>¡Felices Fiestas!</h2>
+    <p>En Marian & Charlie queremos acompañarte, verte crecer día a día. <br> En esta ocasión, a través de estos
+        regalos, ¡que los disfrutes mucho!</p>
 
-    <form onsubmit="return validarFormulario()">
+    <form id="form"">
         <div class="datos-regalo">
-            <label for="nombre">Nombre:</label><br>
-            <input type="text" id="nombre" name="nombre" required><br><br>
+        <label for="name">Nombre</label>
+        <input type="text" name="name" id="name">
 
-            <label for="email">Email:</label><br>
-            <input type="email" id="email" name="email" required><br><br>
+        <label for="email">Email</label>
+        <input type="text" name="email" id="email">
 
-            <label for="whatsapp">WhatsApp:</label><br>
-            <input type="tel" id="whatsapp" name="whatsapp" required><br><br>
+        <label for="whatsapp">whatsapp</label>
+        <input type="text" name="whatsapp" id="whatsapp">
         </div>
         <div class="regalos-opciones">
             <label>Regalos (Elige hasta 4 opciones):</label><br>
-            <input type="checkbox" id="regalo1" name="regalos[]" value="Opción 1"> Opción 1<br>
-            <input type="checkbox" id="regalo2" name="regalos[]" value="Opción 2"> Opción 2<br>
-            <input type="checkbox" id="regalo3" name="regalos[]" value="Opción 3"> Opción 3<br>
-            <input type="checkbox" id="regalo4" name="regalos[]" value="Opción 4"> Opción 4<br><br>
-        </div>
-        <div class="datos-enviar
-        ">
-            <input type="submit" value="Enviar">
+            <div class="juntos"> <input type="checkbox" id="regalo1" name="regalos"
+                    value="CALENDARIO EDITORIAL">CALENDARIO EDITORIAL REDES SOCIALES</div>
+            <div class="juntos"> <input type="checkbox" id="regalo2" name="regalos1"
+                    value="ASESORÍA DE TU RED SOCIAL">ASESORÍA DE TU RED SOCIAL</div>
+            <div class="juntos"> <input type="checkbox" id="regalo3" name="regalos2"
+                    value="TEMPLATE PORTFOLIO PERSONAL WEB">TEMPLATE PORTFOLIO PERSONAL WEB</div>
+            <div class="juntos"> <input type="checkbox" id="regalo4" name="regalos3" value="ASESORÍA WEB">ASESORÍA WEB
+            </div>
         </div>
 
+        <div class="datos-enviar">
+            <input class="veve" type="submit" id="button" value="Enviar">
+        </div>
     </form>
-</body>
+
 <script src="/regalo.js"></script>
+
+</body>
 
 </html>

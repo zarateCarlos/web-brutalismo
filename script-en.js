@@ -10,7 +10,6 @@ window.onscroll = () => {
 
 }
 
-
 function cambiarIdioma(archivo) {
     window.location.href = archivo;
 }
@@ -31,20 +30,9 @@ document.addEventListener("click", function (e) {
 });
 
 
-
-
-// function cambiarIdioma(archivo) {
-//     window.location.href = archivo;
-// }
-// function cambiarIdioma(selector) {
-//     let idiomaSeleccionado = selector.value;
-//     window.location.href = idiomaSeleccionado;
-// }
-
-
 window.onload = async () => {
     try {
-        const response = await fetch('data.json');
+        const response = await fetch('data-en.json');
         if (!response.ok) {
             throw new Error('No se pudo cargar el archivo JSON');
         }
@@ -56,7 +44,7 @@ window.onload = async () => {
 };
 
 function renderServices(services) {
-    const container = document.getElementById('services-container');
+    const container = document.getElementById('services-container-en');
 
     services.forEach((servicio) => {
         const serviceElement = createServiceElement(servicio);
@@ -95,14 +83,13 @@ function createServiceElement(servicio) {
     return div;
 }
 
-
 function openModal(nombre, descripcion, colorFondo, numero) {
-    const modal = document.getElementById('myModal');
+    const modal = document.getElementById('myModal-en');
     modal.innerHTML = `
         <span class="close-btn" onclick="closeModal()">&times;</span>
         <h2>${nombre}</h2>
         <p>${descripcion}</p>
-        <p class="pepe">COORDINAR CONSULTA GRATIS</p>
+        <p class="pepe">ARRANGE FREE CONSULTATION</p>
         <div class="coordinar gratiss">
         <a target="_blank" href=${numero}><img loading="lazy" src="img/whatsapp.png" alt="">WhatsApp</a>
         </div>
@@ -115,9 +102,10 @@ function openModal(nombre, descripcion, colorFondo, numero) {
 }
 
 function closeModal() {
-    const modal = document.getElementById('myModal');
+    const modal = document.getElementById('myModal-en');
     modal.close();
 }
+
 
 
 const btn = document.getElementById('button');
@@ -126,7 +114,7 @@ document.getElementById('form')
     .addEventListener('submit', function (event) {
         event.preventDefault();
 
-        btn.value = 'Enviando..';
+        btn.value = 'Sending...';
 
         const serviceID = 'default_service';
         const templateID = 'template_uuhkt81';
@@ -135,7 +123,7 @@ document.getElementById('form')
             .then(() => {
                 btn.value = 'Send Email';
                 document.getElementById('form').reset();
-                alert('Su mensaje fue enviado correctamente, MUCHAS GRACIAS!');
+                alert('Sent!');
             }, (err) => {
                 btn.value = 'Send Email';
                 alert(JSON.stringify(err));

@@ -1,0 +1,44 @@
+[
+    {
+        "id": 1,
+        "nombre": "WEB DEVELOPMENT",
+        "descripcion": "We create the website structure according to the needs and adapt it to any device.\n\nWe optimize its performance, enhancing user experience and search engine ranking.\n\nWe maintain the site: modifications, addition of new features, and content as needed.",
+        "colorFondo": "linear-gradient(to left, #ad7bff, #ad7bff, #ad7bff, #ad7bff, #ad7bff, #b287ff, #b893ff, #be9eff, #ccb7ff, #dccfff, #ede7ff, #ffffff)",
+        "numero": "https://wa.me/541162937028"
+    },
+    {
+        "id": 2,
+        "nombre": "UI - UX",
+        "descripcion": "We perform the graphic design of interface elements, select typography, and colors.\n\nWe create a unique, attractive, and coherent aesthetic to highlight the website.\n\nWe conduct user experience tests and analyze them to optimize the interface and its functionalities.",
+        "colorFondo": "linear-gradient(to left, #7fbc8c, #7fbc8c, #7fbc8c, #7fbc8c, #7fbc8c, #7cc3a1, #7dcab4, #83d0c6, #a0dbe5, #c7e5f6, #e9f0fc, #ffffff)",
+        "numero": "https://wa.me/541162937028"
+    },
+    {
+        "id": 3,
+        "nombre": "DIGITAL MARKETING",
+        "descripcion": "We develop strategic campaigns adapted to each project's objectives and track them appropriately.\n\nWe design Social Ads to gain visibility and increase traffic on social networks.\n\nWe perform SEO services to optimize online presence.",
+        "colorFondo": "linear-gradient(to left, #ff69b4, #ff69b4, #ff69b4, #ff69b4, #ff69b4, #fd79c2, #fa89cf, #f797da, #f1b5ee, #eed0fa, #f2e9ff, #ffffff)",
+        "numero": "https://wa.me/541162937028"
+    },
+    {
+        "id": 4,
+        "nombre": "SOCIAL MEDIA",
+        "descripcion": "We research each project's area.\n\nWe plan actions, define goals, audience, and convenient social networks.\n\nWe analyze metrics and evaluate strategies.",
+        "colorFondo": "linear-gradient(to left, #69d2e7, #69d2e7, #69d2e7, #69d2e7, #69d2e7, #7cd5ee, #8dd8f3, #9edbf7, #c0e2fd, #dceaff, #f1f3ff, #ffffff)",
+        "numero": "https://wa.me/541132005669"
+    },
+    {
+        "id": 5,
+        "nombre": "COMMUNITY MANAGEMENT",
+        "descripcion": "We execute the previously planned strategy.\n\nWe manage different communities, moderate comments, and maintain feedback.",
+        "colorFondo": "linear-gradient(to left, #9723c9, #9723c9, #9723c9, #9723c9, #9723c9, #9c40d1, #a256d9, #a869e0, #b891ed, #ccb7f6, #e3dbfc, #ffffff)",
+        "numero": "https://wa.me/541132005669"
+    },
+    {
+        "id": 6,
+        "nombre": "AUDIOVISUAL CONTENT",
+        "descripcion": "We perform audiovisual editing for social networks.\n\nWe devise exclusive content for each platform to make each project stand out and have greater interaction with its community.",
+        "colorFondo": "linear-gradient(to left, #e3a018, #e3a018, #e3a018, #e3a018, #e3a018, #f39e42, #fc9e62, #ffa17e, #ffb3b7, #ffcde2, #fae8fa, #ffffff)",
+        "numero": "https://wa.me/541132005669"
+    }
+]
