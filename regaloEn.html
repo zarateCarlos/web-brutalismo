@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>M&C - Gifts</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/intl-tel-input@18.2.1/build/css/intlTelInput.css">
     <link rel="stylesheet" href="regalo.css?v=2">
     <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
     <script>
@@ -16,19 +17,20 @@
 
 <body>
     <h2>Happy Holidays!</h2>
+    <a class="atras" href="/">&leftarrow;</a>
     <p>At Marian & Charlie, we want to accompany you, see you grow day by day. <br> On this occasion, through these
         gifts, enjoy them a lot!</p>
 
     <form id="form">
         <div class="datos-regalo">
             <label for="name">Name</label>
-            <input type="text" name="name" id="name">
+            <input placeholder="Your Name"  type="text" name="name" id="name">
 
             <label for="email">Email</label>
-            <input type="text" name="email" id="email">
+            <input placeholder="Your Email" type="text" name="email" id="email">
 
             <label for="whatsapp">WhatsApp</label>
-            <input type="text" name="whatsapp" id="whatsapp">
+            <input type="tel" name="whatsapp" id="whatsapp">
         </div>
         <div class="regalos-opciones">
             <label>Gifts (Choose up to 4 options):</label><br>
@@ -47,6 +49,13 @@
             <input class="veve" type="submit" id="button" value="Submit">
         </div>
     </form>
+    <script src="https://cdn.jsdelivr.net/npm/intl-tel-input@18.2.1/build/js/intlTelInput.min.js"></script>
+    <script>
+        const input = document.querySelector("#whatsapp");
+        const iti = window.intlTelInput(input, {
+            utilsScript: "https://cdn.jsdelivr.net/npm/intl-tel-input@18.2.1/build/js/utils.js",
+        });
+    </script>
 
     <script src="/regalo.js"></script>
 

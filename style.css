@@ -58,7 +58,7 @@ body {
 .custom-select {
     position: absolute;
     display: inline-block;
-    right: 0;
+    right: 5px;
 
 }
 
@@ -97,13 +97,6 @@ body {
     background-color: #f0f0f0cb;
     color: black;
 }
-
-
-
-
-
-
-
 
 
 
@@ -158,22 +151,16 @@ nav {
 }
 
 
-
+.hoy .regalo:hover {
+    filter: drop-shadow(0px 0px 20px white);
+    z-index: 10000;
+}
 
 .regalo {
     display: flex;
 
 }
 
-nav a {
-    color: #f2f4f0;
-    font-weight: bold;
-}
-
-nav a span {
-    color: rgb(255, 0, 0);
-    font-size: 30px
-}
 
 .navbar {
     display: flex;
@@ -185,8 +172,14 @@ nav a span {
     color: rgb(255, 255, 255);
     font-weight: 700;
     font-size: 20px;
-    -webkit-text-stroke: 1px #00bb2d;
+    -webkit-text-stroke: 1px #000000;
     text-transform: uppercase;
+    transition: 0.3s all ease;
+}
+
+.navbar a:hover {
+    color: #ffea00;
+
 }
 
 main {
@@ -1124,6 +1117,8 @@ footer {
     justify-content: center;
     flex-direction: column;
 
+    position: relative;
+
 }
 
 .frase {
@@ -1277,14 +1272,29 @@ input[type="submit"]:hover {
 
 
 
-.copy{
+.copy {
     text-align: center;
     margin-bottom: 40px;
 }
 
 
 
+.subir {
+    background-color: rgb(255, 255, 255);
+    border: 3px solid rgb(0, 0, 0);
+    padding: 5px 25px;
+    border-radius: 50%;
+    font-size: 40px;
+    color: #000000;
+    position: absolute;
+    bottom: 20px;
+    right: 50px;
+    transition: 0.3s all ease;
+}
 
+.subir:hover {
+    background-color: red;
+}
 
 
 
@@ -1301,15 +1311,28 @@ input[type="submit"]:hover {
     nav .flotante {
         display: none;
     }
-
+    .heroTexto h2 {
+        font-size: 25px;
+    }
+    .canvas{
+        width: 38vmin;
+    }
+    .heroTexto{
+        gap: 60px;
+        width: 80%;
+    }
+.resaltar {
+    font-size: 30px;
+}
 }
 
 @media (min-width:320px) and (max-width: 767px) {
 
-.copy{
-    width: 60%;
-    margin: 0 auto;
-}
+    .copy {
+        width: 60%;
+        margin: 0 auto;
+    }
+
     nav {
         height: 5vh;
         /* background-color: #ff7b7b; */
@@ -1681,4 +1704,13 @@ input[type="submit"]:hover {
         text-align: center;
     }
 
+
+    .subir {
+        display: none;
+    }
+
+
+    .custom-select {
+        display: none;
+    }
 }

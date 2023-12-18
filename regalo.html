@@ -5,30 +5,34 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>M&C - Regalos</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/intl-tel-input@18.2.1/build/css/intlTelInput.css">
     <link rel="stylesheet" href="regalo.css?v=2">
     <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
     <script>
         (function () {
-            emailjs.init("D-6GIDCaCFGqgKG6v"); // Reemplaza "user_tuUserID" con tu User ID de EmailJS
+            emailjs.init("D-6GIDCaCFGqgKG6v");
         })();
     </script>
 </head>
 
 <body>
     <h2>¡Felices Fiestas!</h2>
+
+    <a class="atras" href="/">&leftarrow;</a>
+
     <p>En Marian & Charlie queremos acompañarte, verte crecer día a día. <br> En esta ocasión, a través de estos
         regalos, ¡que los disfrutes mucho!</p>
 
     <form id="form"">
-        <div class="datos-regalo">
+        <div class=" datos-regalo">
         <label for="name">Nombre</label>
-        <input type="text" name="name" id="name">
+        <input placeholder="Tu Nombre" type="text" name="name" id="name" required>
 
         <label for="email">Email</label>
-        <input type="text" name="email" id="email">
+        <input placeholder="Tu Email" type="text" name="email" id="email" required>
 
         <label for="whatsapp">whatsapp</label>
-        <input type="text" name="whatsapp" id="whatsapp">
+        <input type="tel" name="whatsapp" id="whatsapp">
         </div>
         <div class="regalos-opciones">
             <label>Regalos (Elige hasta 4 opciones):</label><br>
@@ -46,8 +50,17 @@
             <input class="veve" type="submit" id="button" value="Enviar">
         </div>
     </form>
+    <script src="/regalo.js"></script>
 
-<script src="/regalo.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/intl-tel-input@18.2.1/build/js/intlTelInput.min.js"></script>
+    <script>
+        const input = document.querySelector("#whatsapp");
+        const iti = window.intlTelInput(input, {
+            utilsScript: "https://cdn.jsdelivr.net/npm/intl-tel-input@18.2.1/build/js/utils.js",
+        });
+    </script>
+
+
 
 </body>
 

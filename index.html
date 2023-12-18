@@ -4,8 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Marian & Charlie - Imagen y Comunicación digital
-    Brindamos servicios de Desarrollo web, Marketing digital, Social Media y Asesoría personalizada, entre otros. Somos el equipo que acompaña en el crecimiento de cada proyecto, les da presencia y los potencia.
+    <meta name="description" content="Brindamos servicios integrales y personalizados de Imagen y Comunicación digital. Nos especializamos en todo lo que precisas para crecer, ¡entrá y descubrilo!
     ">
     <meta name="keywords"
         content="Marian & Charlie, #MarianyCharlie, Camino creativo, #CaminoCreativo, Ideas en acción, #IdeasEnAcción, Imagen y Comunicación digital, Imagen, Comunicación, Digital, #imagen, #comunicación, #digital, Imagen digital, #ImagenDigital, Comunicación digital, #ComunicaciónDigital, Desarrollo web, #DesarrolloWeb, UI, UX, #ui, #ux, Diseño gráfico, #DiseñoGráfico, Marketing digital, #MarketingDigital, #marketingSocial Media, #SocialMedia, Community Management, #CommunityManagement, Edición Audiovisual, #EdiciónAudiovisual, Edición reels, #EdiciónReels, #reels, Posteos, #post, Proyectos, #proyectos, Impulso, #impulso, Crecimiento, #crecimiento, Redes Sociales, #RedesSociales, Página web, #Página Web, Portfolio personalizado, #PortfolioPersonalizado, Asesorías, Consultorías, #AsesoríaPersonalizada, #ConsultoríaPersonalizada, Artistas, Emprendimientos, ONGs, Instituciones, Organizaciones, #artistas, #emprendedores, #emprender, #ong, #instituciones, #organizaciones, Valor, Engagement, Promoción, #valor, #engagement, #promoción, Contenido digital, #ContenidoDigital, Redacción creativa, Copywriting, #RedacciónCreativa, #redacción, #copywriting, Redacción publicitaria, #RedacciónPublicitaria, Campañas publicitarias para redes sociales, #publicidad, #CampañaPublicitaria, Ads, #ads, Instagram, Facebook, #instagram, #facebook, Tik Tok, #tiktok, YouTube, #youtube, Servicios digitales, #ServiciosDigitales, Clases online, #ClasesOnline, Planificación estratégica, #planificar, #estrategias, Excelencia, #excelencia, Autenticidad, #autenticidad, #auténtico, Convicción, Constancia, #convicción, #metas, #constancia, #powerful, #top, #OnTheTop, Sin límites, #unlimited">
@@ -14,9 +13,9 @@
 
     <link rel="canonical" href="https://www.marianycharlie.com">
 
-    <link rel="alternate" hreflang="es" href="index.html">
+    <link rel="alternate" hreflang="es" href="https://www.marianycharlie.com/index.html">
     <!-- Versión en inglés -->
-    <link rel="alternate" hreflang="en" href="index-en.html">
+    <link rel="alternate" hreflang="en" href="https://www.marianycharlie.com/index-en.html">
 
     <meta property="og:title" content="Somos Marian & Charlie.">
     <meta property="og:description" content="Brindamos servicios de Imagen y Comunicación digital.">
@@ -26,6 +25,7 @@
         Imagen y Comunicación digital
     </title>
     <link rel="shortcut icon" href="/logo_MyC.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/intl-tel-input@18.2.1/build/css/intlTelInput.css">
     <link rel="stylesheet" href="style.css?v=5">
 </head>
 
@@ -40,7 +40,7 @@
     <header class="title">
         <img loading="lazy" src="img/icons8-estrella-100.png" alt="imagen de una estrella">
         <h1>MARIAN & CHARLIE</h1>
-        <img loading="lazy" src="img/icons8-estrella-100.png" alt="imagen de una estrella">
+        <img class="mover" loading="lazy" src="img/icons8-estrella-100.png" alt="imagen de una estrella">
 
         <div class="custom-select">
             <span class="selected-option" onclick="toggleOptions()">
@@ -66,7 +66,7 @@
         <span class="hoy">
             <img loading="lazy" class="move1" src="img/media.png" alt="media de navidad">
             <img loading="lazy" class="move2" src="img/media.png" alt="media de navidad">
-            <a title="QUIZAS ENCONTRASTE ALGO.." class="regalo" href="/regalo.html">
+            <a class="regalo" href="/regalo.html">
                 <img loading="lazy" class="move3" src="img/media.png" alt="media de navidad">
             </a>
         </span>
@@ -464,11 +464,11 @@
                 <div class="junto">
                     <div class="field">
                         <label for="from_name">Nombre Completo</label>
-                        <input type="text" name="from_name" id="from_name" required>
+                        <input placeholder="Tu Nombre" type="text" name="from_name" id="from_name" required>
                     </div>
                     <div class="field">
                         <label for="email_id">Email</label>
-                        <input type="email" name="email_id" id="email_id" required>
+                        <input placeholder="Tu Email" type="email" name="email_id" id="email_id" required>
                     </div>
                     <div class="field">
                         <label for="number_id">WhatsApp</label>
@@ -479,7 +479,8 @@
                 <div class="envio">
                     <div class="field">
                         <label for="message">Mensaje</label>
-                        <textarea name="message" id="message" cols="34" rows="7" required></textarea>
+                        <textarea placeholder="Su Mensaje" name="message" id="message" cols="34" rows="7"
+                            required></textarea>
                     </div>
                     <input type="submit" id="button" value="Enviar">
                 </div>
@@ -509,11 +510,11 @@
             </div>
 
         </div>
-
+        <a class="subir" href="#">&uarr;</a>
     </footer>
 
     <h4 class="copy">
-        &copy; 2023 Marian y Charlie. All rights reserved.
+        &copy; 2023 Marian&Charlie. All rights reserved.
 
     </h4>
 
@@ -525,6 +526,15 @@
         emailjs.init('D-6GIDCaCFGqgKG6v')
     </script>
     <script defer src="https://app.embed.im/snow.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/intl-tel-input@18.2.1/build/js/intlTelInput.min.js"></script>
+    <script>
+        const input = document.querySelector("#number_id");
+        const iti = window.intlTelInput(input, {
+            utilsScript: "https://cdn.jsdelivr.net/npm/intl-tel-input@18.2.1/build/js/utils.js",
+        });
+    </script>
+
 </body>
 
 </html>

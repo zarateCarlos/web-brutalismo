@@ -121,23 +121,31 @@ function closeModal() {
 
 
 const btn = document.getElementById('button');
+const form = document.getElementById('form')
+const phoneInput = document.getElementById('number_id');
 
-document.getElementById('form')
-    .addEventListener('submit', function (event) {
-        event.preventDefault();
 
-        btn.value = 'Enviando..';
+form.addEventListener('submit', function (event) {
+    event.preventDefault();
 
-        const serviceID = 'default_service';
-        const templateID = 'template_uuhkt81';
 
-        emailjs.sendForm(serviceID, templateID, this)
-            .then(() => {
-                btn.value = 'Send Email';
-                document.getElementById('form').reset();
-                alert('Su mensaje fue enviado correctamente, MUCHAS GRACIAS!');
-            }, (err) => {
-                btn.value = 'Send Email';
-                alert(JSON.stringify(err));
-            });
-    });
+    btn.value = 'Enviando..';
+
+    const serviceID = 'default_service';
+    const templateID = 'template_uuhkt81';
+    const phoneNumber = iti.getNumber();
+    // Asignar el número al campo correspondiente del formulario
+    phoneInput.value = phoneNumber;
+
+
+    emailjs.sendForm(serviceID, templateID, this)
+
+        .then(() => {
+            btn.value = 'Enviar';
+            document.getElementById('form').reset();
+            alert('Su mensaje fue enviado correctamente, MUCHAS GRACIAS!');
+        }, (err) => {
+            btn.value = 'Email Enviado';
+            alert(JSON.stringify(err));
+        });
+});

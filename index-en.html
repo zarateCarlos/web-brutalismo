@@ -4,19 +4,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="">
-    <meta name="keywords" content="">
+    <meta name="description"
+        content="We offer comprehensive and personalized services in Image and Digital Communication. We specialize in everything you need to grow. Enter and discover it!">
+    <meta name="keywords"
+        content="Creative path, #CreativePath, Ideas in action, #IdeasInAction, Image and digital communication, Image, Communication, Digital, #image, #communication, #digital, Digital image, #DigitalImage, Digital communication, #DigitalCommunication, Web Development, #WebDevelopment, Graphic Design, #GraphicDesign, Digital Marketing, #DigitalMarketing, #marketingSocialMedia, #SocialMedia, Social Media, Community Management, #CommunityManagement, Audiovisual Edition, #AudiovisualEdition, Reels Edition, #ReelsEdition, Posts, Projects, #projects, Impulse, #impulse, Growth, #growth, Social Networks, #SocialNetworks, Website, #Web Page, Personalized Portfolio, #PersonalizedPortfolio, Advisories, Consulting , #PersonalizedAdvice, #PersonalizedConsulting, Artists, Entrepreneurships, NGOs, Institutions, Organizations, #artists, #entrepreneurs, #undertake, #ong, #institutions, #organizations, Value, Engagement, Promotion, #value, #engagement, #promotion, Digital content, #DigitalContent, Creative writing, #CreativeWriting, #writing, Advertising writing, #Advertising Writing, Advertising campaigns for social networks, #advertising, #AdvertisingCampaign, Digital services, #DigitalServices, Online classes, #OnlineClasses, Strategic planning, #plan, #strategies, Excellence, #excellence, Authenticity, #authenticity, #authentic, Conviction, Consistency, #conviction, #goals, #constancy, #powerful, #top, #OnTheTop, Without limits, #unlimited">
     <meta name="robots" content="index, follow">
-    <meta name="author" content="">
+    <meta name="author" content="Mariana Martinez y Carlos Zarate">
 
-    <link rel="canonical" href="https://www.ejemplo.com/pagina-principal">
+    <link rel="canonical" href="https://www.marianycharlie.com">
 
-    <meta property="og:title" content="...">
-    <meta property="og:description" content="...">
-    <meta property="og:image" content="URL de la imagen">
+    <link rel="alternate" hreflang="es" href="https://www.marianycharlie.com/index.html">
+    <!-- Versión en inglés -->
+    <link rel="alternate" hreflang="en" href="https://www.marianycharlie.com/index-en.html">
 
-    <title>Marian & Charlie</title>
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" href="/logo_MyC.png">
+
+    <meta property="og:title" content="We are Marian & Charlie.">
+    <meta property="og:description" content="We offer Image and Digital Communication services.">
+    <meta property="og:image" content="https://www.marianycharlie.com/logo_MyC.png">
+
+    <title>Marian & Charlie - Image and Digital Communication</title>
+    <link rel="shortcut icon" href="/logo_MyC.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/intl-tel-input@18.2.1/build/css/intlTelInput.css">
     <link rel="stylesheet" href="style.css?v=2">
 </head>
 
@@ -462,11 +471,11 @@
                 <div class="junto">
                     <div class="field">
                         <label for="from_name">Full Name</label>
-                        <input type="text" name="from_name" id="from_name" required>
+                        <input placeholder="Your name" type="text" name="from_name" id="from_name" required>
                     </div>
                     <div class="field">
                         <label for="email_id">Email</label>
-                        <input type="email" name="email_id" id="email_id" required>
+                        <input placeholder="Your Email" type="email" name="email_id" id="email_id" required>
                     </div>
                     <div class="field">
                         <label for="number_id">WhatsApp</label>
@@ -477,7 +486,8 @@
                 <div class="envio">
                     <div class="field">
                         <label for="message">Message</label>
-                        <textarea name="message" id="message" cols="34" rows="7" required></textarea>
+                        <textarea placeholder="Your Message" name="message" id="message" cols="34" rows="7"
+                            required></textarea>
                     </div>
                     <input type="submit" id="button" value="Enviar">
                 </div>
@@ -508,9 +518,13 @@
 
         </div>
 
-
+        <a class="subir" href="#">&uarr;</a>
 
     </footer>
+    <h4 class="copy">
+        &copy; 2023 Marian&Charlie. All rights reserved.
+
+    </h4>
 
 
     <script src="/script-en.js"></script>
@@ -520,6 +534,14 @@
         emailjs.init('D-6GIDCaCFGqgKG6v')
     </script>
     <script defer src="https://app.embed.im/snow.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/intl-tel-input@18.2.1/build/js/intlTelInput.min.js"></script>
+    <script>
+        const input = document.querySelector("#number_id");
+        const iti = window.intlTelInput(input, {
+            utilsScript: "https://cdn.jsdelivr.net/npm/intl-tel-input@18.2.1/build/js/utils.js",
+        });
+    </script>
 </body>
 
 </html>
